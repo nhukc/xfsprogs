@@ -49,6 +49,7 @@
 #define FSCRYPT_MODE_AES_128_CBC		5
 #define FSCRYPT_MODE_AES_128_CTS		6
 #define FSCRYPT_MODE_ADIANTUM			9
+#define FSCRYPT_MODE_AES_256_HCTR2		10
 
 /*
  * In the headers for Linux v4.6 through v5.3, 'struct fscrypt_policy_v1' is
@@ -162,6 +163,7 @@ static const struct {
 	{FSCRYPT_MODE_AES_128_CBC, "AES-128-CBC"},
 	{FSCRYPT_MODE_AES_128_CTS, "AES-128-CTS"},
 	{FSCRYPT_MODE_ADIANTUM, "Adiantum"},
+	{FSCRYPT_MODE_AES_256_HCTR2, "AES-256-HCTR2"},
 };
 
 static cmdinfo_t get_encpolicy_cmd;
